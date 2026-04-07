@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(layout='wide')
 
 df_reviews = pd.read_csv('livros_mais_vendidos_da_amazon/datasets/customer_reviews.csv')
-df_top100_books = pd.read_csv('livros_mais_vendidos_da_amazon/datasets/TOP-100_Trending_Books.csv')
+df_top100_books = pd.read_csv('livros_mais_vendidos_da_amazon/datasets/Top-100_Trending_Books.csv')
 
 books = df_top100_books["book title"].unique()
 book = st.sidebar.selectbox("Livros", books)
